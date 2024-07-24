@@ -22,22 +22,30 @@
 	});
 </script>
 
-<hgroup>
-	<h1>Project</h1>
-	<p>List of projects that are visible to everyone in this lab.</p>
-</hgroup>
+<section class="min-h-screen">
+	<hgroup>
+		<h1>Project</h1>
+		<p>List of projects that are visible to everyone in our GitHub organization.</p>
+	</hgroup>
 
-{#if isLoading}
-	<p>Loading...</p>
-{:else}
-	<div class=":uno: grid grid-cols-1 sm:grid-cols-2 gap-4">
-		{#each repos as repo (repo.name)}
-			<a href={repo.html_url}>
-				<div class=":uno: px-4 py-2 shadow-md hover:shadow-lg rounded">
-					<p class=":uno: text-2xl font-semibold">{repo.name}</p>
-					<p>{repo.description}</p>
-				</div>
-			</a>
-		{/each}
-	</div>
-{/if}
+	{#if isLoading}
+		<p class="text-center">Loading...</p>
+	{:else}
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+			{#each repos as repo (repo.name)}
+				<a href={repo.html_url} target="_blank">
+					<div class="px-6 py-4 space-y-4 shadow hover:shadow-md rounded bg-sky-50 dark:bg-sky-950">
+						<div class="text-2xl font-semibold">{repo.name}</div>
+						<div>{repo.description}</div>
+					</div>
+				</a>
+			{/each}
+		</div>
+	{/if}
+</section>
+
+<style>
+	a {
+		--apply: 'text-black dark:text-white no-underline';
+	}
+</style>

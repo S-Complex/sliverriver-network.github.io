@@ -8,13 +8,13 @@
 
 <svelte:head>
 	<title>Sliver Complex</title>
-	<meta name="description" content="The landing site of Sliver Complex.">
-	<link rel="icon" href="https://library.gxres.net/images/icons/favicon.webp">
+	<meta name="description" content="The landing site of Sliver Complex." />
+	<link rel="icon" href="https://library.gxres.net/images/icons/favicon.webp" />
 </svelte:head>
 
 <div>
 	<Header />
-	<main class=":uno: max-w-4xl mx-auto p-4">
+	<main class="max-w-4xl mx-auto p-4">
 		<slot />
 	</main>
 	<Footer />
@@ -24,16 +24,14 @@
 
 <style>
 	:global(body) {
-		--apply: m-0 bg-white dark:bg-neutral-800;
+		--apply: 'm-0 bg-white dark:bg-neutral-800 text-black dark:text-white';
 		font-family: 'Noto Sans';
 	}
-	:global(h1, h2, h3, h4, h5, h6, p) {
-		--apply: text-black dark:text-white;
-	}
 	:global(a) {
-		--apply: text-sky-600 no-underline;
+		--apply: 'text-sky-600 no-underline hover:underline';
 	}
 	:global(code) {
-		--apply: text-red font-family: 'Jetbrains Mono';
+		--apply: 'text-red';
+		font-family: 'Jetbrains Mono';
 	}
 </style>
