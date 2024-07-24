@@ -3,9 +3,11 @@ import ts from 'typescript-eslint';
 import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
 import globals from 'globals';
+import unocss from '@unocss/eslint-config/flat'
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
+	unocss,
 	js.configs.recommended,
 	...ts.configs.recommended,
 	...svelte.configs['flat/recommended'],
