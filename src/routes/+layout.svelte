@@ -39,7 +39,7 @@
 		<slot />
 	</main>
 	<footer class="text-center">
-		<p>Copyright © 2019 - 2024 <a href="/">Sliver Complex</a>. Powered by SvelteKit.</p>
+		<p>Copyright © 2022 - {@html new Date().getFullYear()} <a href="/">Sliver Complex</a>. Powered by SvelteKit.</p>
 	</footer>
 </div>
 
