@@ -1,23 +1,11 @@
-import { defineConfig, presetUno, presetWebFonts, transformerDirectives } from 'unocss';
-import transformerCompileClass from '@unocss/transformer-compile-class';
+import { defineConfig, presetUno, transformerDirectives } from 'unocss';
 
 export default defineConfig({
-	presets: [
-		presetUno(),
-		presetWebFonts({
-			provider: 'bunny',
-			fonts: {
-				sans: 'Noto Sans',
-				mono: 'Jetbrains Mono'
-			}
-		})
-	],
+	presets: [presetUno()],
 	shortcuts: {
-		'nav-item':
-			'px-2 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-600 flex items-center text-black dark:text-white no-underline'
+		button: 'bg-white dark:bg-zinc-700 p-2 rounded-md shadow-md'
 	},
 	transformers: [
-		transformerCompileClass(),
 		transformerDirectives({
 			applyVariable: ['--apply']
 		})

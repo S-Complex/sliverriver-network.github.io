@@ -1,4 +1,4 @@
-<h1>About</h1>
+<h2>What is Sliver Complex?</h2>
 <p>Sliver Complex is a personal lab belongs to Restent Ou and SliverRiver.</p>
 <h2>Direction</h2>
 <p>
