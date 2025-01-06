@@ -1,8 +1,10 @@
-<section class="flex justify-center text-center space-y-4">
-	<div>
-		<p class="text-sm">
-			* We use domain <code>slirv.vip</code> to serve some services, such as the comment system and the
-			self-hosted analysis service.
-		</p>
-	</div>
-</section>
+<div class="text-center">
+	<h2>Welcome to Sliver Complex!</h2>
+	<p>
+		This is a lab of <a href="https://github.com/gxres042" target="_blank" rel="noopener noreferer"
+			>@gxres042</a
+		>
+		and
+		<a href="https://github.com/slivermoe" target="_blank" rel="noopener noreferer">@slivermoe</a>
+	</p>
+</div>
