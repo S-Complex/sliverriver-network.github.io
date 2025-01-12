@@ -8,7 +8,7 @@
 </script>
 
 <header
-	class="shadow-md flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 dark:from-blue-500/50 to-cyan-100 dark:to-cyan-500/50"
+	class="shadow-md flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 dark:from-blue-500/50 to-cyan-100 dark:to-cyan-500/50 z-10"
 >
 	<div class="p-4 flex flex-col md:flex-row gap-4 items-center">
 		<img

@@ -22,10 +22,12 @@
 	<link rel="canonical" href="https://insli.cc" />
 </svelte:head>
 
-<div class="flex flex-col min-h-svh">
+<div class="max-w-2xl mx-auto flex flex-col min-h-svh">
 	<Header />
-	<main class="flex-auto p-4 max-w-2xl mx-auto w-full">
-		<slot />
+	<main class="flex-auto w-full">
+		<section class="p-4 bg-white dark:bg-slate-800 shadow rounded-b-md">
+			<slot />
+		</section>
 	</main>
 	<footer>
 		<p class="text-center text-sm">
